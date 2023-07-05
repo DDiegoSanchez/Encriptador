@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador Dayan</title>
+</head>
+<body>
+    <header>
+        <img class="Logo" src="img/Logo.png" alt="logo alura">
+    </header>
+    <main>
+        <div class="contenedor">
+            <section class="ingresa-texto">
+                <div class="contenedor__textarea">
+                    <textarea class="textarea" placeholder="Ingresa texto aqui"></textarea>
+                </div>
+                <p class="importante">Solo letras minusculas y sin acento</p>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesncriptar()">Desencriptar</button>    
+                </div>
+            </section>
+            <section class="mostrar-texto">
+                <div class="texto-salida">
+                    <textarea class="mensaje"></textarea>
+                </div>
+                <button class="copiar" onclick="btnCopiar()">Copiar</button>
+            </section>
+        </div>
+    </main>
+    <footer>Desarrollado por Dayan Diego 2023</footer>
+    <script src="script.js"></script>
+</body>
+</html>
