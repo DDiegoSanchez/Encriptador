@@ -3,10 +3,9 @@
     font-family: 'Inter';
     font-weight: 400;
     font-size: 32px;
-    line-height: 150%;
 }
 
-html, body {
+html, body{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -33,7 +32,6 @@ main{
     display: flex;
     justify-content: space-evenly;
 }
-
 
 .ingresa-texto{
     background:#5e7186;
@@ -155,6 +153,48 @@ main{
 }
 .mensaje:focus{
     outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        height: 100%;
+        padding: 0;
+        align-items: center;
+    }
+    .contenedor{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .ingresa-texto{
+        width: 100%;
+        height: 50%;
+    }
+    .mostrar-texto{
+        width: 100%;
+        height: 40%;
+    }
+
+    .mensaje{
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html, body, main{
+        height: auto;
+        width: 100%;
+    }
+
+    .botones{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-encriptar, .btn-desencriptar{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
 }
 
 /*footer*/
